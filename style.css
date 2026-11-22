@@ -1,0 +1,1170 @@
+css
+/* ==============================
+   BASIC SETTINGS
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* ==============================
+   LOGIN PAGE
+============================== */
+
+.login-body {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #172554,
+        #2563eb,
+        #7c3aed
+    );
+}
+
+
+/* ==============================
+   LOGIN CONTAINER
+============================== */
+
+.login-container {
+
+    width: 420px;
+
+    max-width: 92%;
+
+    background: white;
+
+    padding: 40px 35px;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ==============================
+   LOGO
+============================== */
+
+.login-logo {
+
+    width: 75px;
+
+    height: 75px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 32px;
+
+    border-radius: 50%;
+}
+
+
+/* ==============================
+   HEADING
+============================== */
+
+.login-container h1 {
+
+    font-size: 30px;
+
+    color: #172554;
+
+    margin-bottom: 8px;
+}
+
+
+.login-subtitle {
+
+    color: #64748b;
+
+    margin-bottom: 30px;
+}
+
+
+/* ==============================
+   LOGIN BOX
+============================== */
+
+.login-box {
+
+    text-align: left;
+}
+
+
+.login-box label {
+
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+.login-box input {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: 2px solid #e2e8f0;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    margin-bottom: 15px;
+}
+
+
+.login-box input:focus {
+
+    border-color: #2563eb;
+}
+
+
+/* ==============================
+   LOGIN BUTTON
+============================== */
+
+.main-btn {
+
+    width: 100%;
+
+    border: none;
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 14px;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.main-btn:hover {
+
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+}
+
+
+/* ==============================
+   ERROR MESSAGE
+============================== */
+
+.error-message {
+
+    color: #dc2626;
+
+    text-align: center;
+
+    margin-top: 12px;
+
+    font-size: 14px;
+}
+
+
+/* ==============================
+   FOOTER TEXT
+============================== */
+
+.login-footer {
+
+    margin-top: 30px;
+
+    color: #64748b;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+```
+```css
+/* =================================
+   HOME PAGE
+================================= */
+
+
+/* ================================
+   HEADER
+================================ */
+
+.header {
+
+    background: #172554;
+
+    color: white;
+
+    padding: 16px 6%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.logo {
+
+    font-size: 22px;
+
+    font-weight: bold;
+}
+
+
+.logo i {
+
+    margin-right: 8px;
+}
+
+
+.user-area {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.logout-btn {
+
+    border: 1px solid
+        rgba(255,255,255,0.5);
+
+    background: transparent;
+
+    color: white;
+
+    padding: 8px 14px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+
+.logout-btn:hover {
+
+    background:
+        rgba(255,255,255,0.15);
+}
+
+
+
+/* ================================
+   HERO
+================================ */
+
+.hero {
+
+    background:
+        linear-gradient(
+            135deg,
+            #1e3a8a,
+            #2563eb
+        );
+
+    color: white;
+
+    padding: 70px 20px;
+
+    text-align: center;
+}
+
+
+.hero h1 {
+
+    font-size: 42px;
+
+    margin-bottom: 15px;
+}
+
+
+.hero p {
+
+    font-size: 18px;
+
+    opacity: 0.9;
+}
+
+
+.welcome-user {
+
+    margin-top: 20px;
+}
+
+
+
+/* ================================
+   SUBJECT SECTION
+================================ */
+
+.subjects-section {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 55px 20px;
+}
+
+
+.subjects-section > h2 {
+
+    text-align: center;
+
+    font-size: 30px;
+
+    color: #172554;
+}
+
+
+.section-subtitle {
+
+    text-align: center;
+
+    margin-top: 8px;
+
+    color: #64748b;
+
+    margin-bottom: 35px;
+}
+
+
+
+/* ================================
+   SUBJECT GRID
+================================ */
+
+.subject-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+
+/* ================================
+   SUBJECT CARD
+================================ */
+
+.subject-card {
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 28px;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 30px
+        rgba(15,23,42,0.08);
+
+    border: 1px solid #e5e7eb;
+
+    transition: 0.3s;
+}
+
+
+.subject-card:hover {
+
+    transform:
+        translateY(-7px);
+
+    box-shadow:
+        0 15px 35px
+        rgba(15,23,42,0.15);
+}
+
+
+
+/* ================================
+   SUBJECT ICON
+================================ */
+
+.subject-icon {
+
+    width: 70px;
+
+    height: 70px;
+
+    margin:
+        0 auto 18px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #dbeafe;
+
+    color: #2563eb;
+
+    font-size: 28px;
+}
+
+
+.subject-card h3 {
+
+    color: #172554;
+
+    font-size: 21px;
+
+    margin-bottom: 10px;
+}
+
+
+.subject-card p {
+
+    color: #64748b;
+
+    min-height: 40px;
+
+    margin-bottom: 20px;
+}
+
+
+
+/* ================================
+   QUIZ BUTTON
+================================ */
+
+.subject-card button {
+
+    width: 100%;
+
+    border: none;
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.subject-card button:hover {
+
+    background: #1d4ed8;
+}
+
+
+
+/* ================================
+   DIFFERENT SUBJECT COLORS
+================================ */
+
+.networking .subject-icon {
+
+    background: #dbeafe;
+
+    color: #2563eb;
+}
+
+
+.dbms .subject-icon {
+
+    background: #dcfce7;
+
+    color: #16a34a;
+}
+
+
+.sad .subject-icon {
+
+    background: #f3e8ff;
+
+    color: #9333ea;
+}
+
+
+.fundamental .subject-icon {
+
+    background: #fef3c7;
+
+    color: #d97706;
+}
+
+
+.security .subject-icon {
+
+    background: #fee2e2;
+
+    color: #dc2626;
+}
+
+
+.office .subject-icon {
+
+    background: #e0f2fe;
+
+    color: #0284c7;
+}
+
+
+.history .subject-icon {
+
+    background: #ffedd5;
+
+    color: #ea580c;
+}
+
+
+.geography .subject-icon {
+
+    background: #ccfbf1;
+
+    color: #0f766e;
+}
+
+
+.culture .subject-icon {
+
+    background: #fce7f3;
+
+    color: #db2777;
+}
+
+
+
+/* ================================
+   FOOTER
+================================ */
+
+.footer {
+
+    background: #0f172a;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+
+.footer h3 {
+
+    font-size: 23px;
+
+    margin-bottom: 10px;
+}
+
+
+.footer p {
+
+    color: #cbd5e1;
+
+    margin: 8px 0;
+}
+
+
+.owner {
+
+    margin-top: 20px;
+
+    font-size: 16px;
+}
+
+
+
+/* ================================
+   SOCIAL LINKS
+================================ */
+
+.social-links {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+
+.social-links a {
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+
+.instagram {
+
+    background: #e1306c;
+}
+
+
+.whatsapp {
+
+    background: #25d366;
+}
+
+
+.copyright {
+
+    margin-top: 25px !important;
+
+    font-size: 13px;
+}
+
+
+
+/* ================================
+   MOBILE RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+
+    .subject-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .hero h1 {
+
+        font-size: 34px;
+    }
+
+}
+
+
+
+@media (max-width: 600px) {
+
+    .header {
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    .hero {
+
+        padding: 50px 15px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 28px;
+    }
+
+
+    .hero p {
+
+        font-size: 16px;
+    }
+
+
+    .subject-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .social-links {
+
+        flex-direction: column;
+
+        max-width: 220px;
+
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+}
+```
+/* =================================
+   QUIZ PAGE
+================================= */
+
+.quiz-body {
+
+    min-height: 100vh;
+
+    background: #f5f7fb;
+
+}
+
+
+
+/* =================================
+   QUIZ CONTAINER
+================================= */
+
+.quiz-container {
+
+    max-width: 850px;
+
+    margin: 40px auto;
+
+    padding: 0 20px;
+
+}
+
+
+
+/* =================================
+   QUIZ TOP
+================================= */
+
+.quiz-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+
+}
+
+
+.quiz-label {
+
+    font-size: 12px;
+
+    color: #64748b;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+}
+
+
+.quiz-top h1 {
+
+    color: #172554;
+
+    margin-top: 5px;
+
+}
+
+
+.question-counter {
+
+    background: white;
+
+    padding: 12px 18px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0,0,0,0.06);
+
+}
+
+
+
+/* =================================
+   PROGRESS BAR
+================================= */
+
+.progress-container {
+
+    width: 100%;
+
+    height: 9px;
+
+    background: #e2e8f0;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    margin-bottom: 25px;
+
+}
+
+
+.progress-bar {
+
+    height: 100%;
+
+    width: 0%;
+
+    background: #2563eb;
+
+    transition: 0.4s;
+
+}
+
+
+
+/* =================================
+   QUESTION CARD
+================================= */
+
+.question-card {
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 35px
+        rgba(15,23,42,0.08);
+
+}
+
+
+.question-number {
+
+    color: #2563eb;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+
+}
+
+
+.question-card h2 {
+
+    font-size: 24px;
+
+    line-height: 1.5;
+
+    color: #172554;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* =================================
+   OPTIONS
+================================= */
+
+.options-container {
+
+    display: grid;
+
+    gap: 14px;
+
+}
+
+
+.option {
+
+    border: 2px solid #e2e8f0;
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+.option:hover {
+
+    border-color: #2563eb;
+
+    background: #eff6ff;
+
+}
+
+
+.option.selected {
+
+    border-color: #2563eb;
+
+    background: #dbeafe;
+
+}
+
+
+.option.correct {
+
+    border-color: #16a34a;
+
+    background: #dcfce7;
+
+}
+
+
+.option.wrong {
+
+    border-color: #dc2626;
+
+    background: #fee2e2;
+
+}
+
+
+.option input {
+
+    accent-color: #2563eb;
+
+}
+
+
+
+/* =================================
+   ANSWER MESSAGE
+================================= */
+
+.answer-message {
+
+    margin-top: 18px;
+
+    font-weight: bold;
+
+}
+
+
+.correct-message {
+
+    color: #16a34a;
+
+}
+
+
+.wrong-message {
+
+    color: #dc2626;
+
+}
+
+
+
+/* =================================
+   QUIZ BUTTONS
+================================= */
+
+.quiz-buttons {
+
+    margin-top: 25px;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+}
+
+
+.submit-btn,
+.next-btn {
+
+    border: none;
+
+    padding: 13px 22px;
+
+    border-radius: 9px;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+.submit-btn {
+
+    background: #2563eb;
+
+}
+
+
+.next-btn {
+
+    background: #16a34a;
+
+}
+
+
+
+/* =================================
+   RESULT
+================================= */
+
+.result-box {
+
+    background: white;
+
+    text-align: center;
+
+    padding: 45px 30px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 35px
+        rgba(0,0,0,0.08);
+
+}
+
+
+.result-icon {
+
+    font-size: 60px;
+
+    color: #f59e0b;
+
+    margin-bottom: 15px;
+
+}
+
+
+.result-box h2 {
+
+    color: #172554;
+
+    margin-bottom: 10px;
+
+}
+
+
+.score {
+
+    font-size: 50px;
+
+    font-weight: bold;
+
+    color: #2563eb;
+
+    margin: 20px;
+
+}
+
+
+.result-box .main-btn {
+
+    max-width: 250px;
+
+}
+
+
+.small-footer {
+
+    margin-top: 50px;
+
+}
+
+
+
+/* =================================
+   MOBILE QUIZ
+================================= */
+
+@media (max-width: 600px) {
+
+    .quiz-top {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+
+    }
+
+
+    .question-card {
+
+        padding: 25px 18px;
+
+    }
+
+
+    .question-card h2 {
+
+        font-size: 20px;
+
+    }
+
+}

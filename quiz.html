@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>PGDCA WALA GURU - Quiz</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+
+<body class="quiz-body">
+
+
+<!-- =================================
+     HEADER
+================================= -->
+
+<header class="header">
+
+    <div class="logo">
+
+        <i class="fa-solid fa-graduation-cap"></i>
+
+        PGDCA WALA GURU
+
+    </div>
+
+
+    <div class="user-area">
+
+        <span>
+
+            <i class="fa-solid fa-user"></i>
+
+            <span id="quizUserName"></span>
+
+        </span>
+
+
+        <button
+            onclick="goHome()"
+            class="logout-btn">
+
+            <i class="fa-solid fa-house"></i>
+
+            Home
+
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =================================
+     QUIZ MAIN
+================================= -->
+
+<main class="quiz-container">
+
+
+    <!-- QUIZ TOP -->
+
+    <div class="quiz-top">
+
+        <div>
+
+            <span class="quiz-label">
+                SUBJECT
+            </span>
+
+            <h1 id="subjectTitle">
+                Quiz
+            </h1>
+
+        </div>
+
+
+        <div class="question-counter">
+
+            Question
+
+            <strong id="questionNumber">
+                1
+            </strong>
+
+            /
+
+            <strong id="totalQuestions">
+                10
+            </strong>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- PROGRESS BAR -->
+
+    <div class="progress-container">
+
+        <div
+            id="progressBar"
+            class="progress-bar">
+        </div>
+
+    </div>
+
+
+
+    <!-- QUESTION CARD -->
+
+    <div class="question-card">
+
+
+        <div class="question-number">
+
+            Question
+            <span id="qNo">
+                1
+            </span>
+
+        </div>
+
+
+        <h2 id="questionText">
+
+            Question will appear here
+
+        </h2>
+
+
+
+        <!-- OPTIONS -->
+
+        <div
+            id="optionsContainer"
+            class="options-container">
+
+        </div>
+
+
+
+        <!-- ANSWER MESSAGE -->
+
+        <p
+            id="answerMessage"
+            class="answer-message">
+
+        </p>
+
+
+
+        <!-- BUTTONS -->
+
+        <div class="quiz-buttons">
+
+
+            <button
+                id="submitBtn"
+                onclick="submitAnswer()"
+                class="submit-btn">
+
+                <i class="fa-solid fa-check"></i>
+
+                Submit Answer
+
+            </button>
+
+
+
+            <button
+                id="nextBtn"
+                onclick="nextQuestion()"
+                class="next-btn"
+                style="display:none;">
+
+                Next Question
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================
+         RESULT BOX
+    ================================= -->
+
+    <div
+        id="resultBox"
+        class="result-box"
+        style="display:none;">
+
+
+        <div class="result-icon">
+
+            <i class="fa-solid fa-trophy"></i>
+
+        </div>
+
+
+        <h2>
+            Quiz Completed! 🎉
+        </h2>
+
+
+        <p id="resultMessage">
+
+        </p>
+
+
+        <div class="score">
+
+            <span id="finalScore">
+                0
+            </span>
+
+            /
+
+            <span id="finalTotal">
+                0
+            </span>
+
+        </div>
+
+
+        <button
+            onclick="goHome()"
+            class="main-btn">
+
+            <i class="fa-solid fa-house"></i>
+
+            Back to Home
+
+        </button>
+
+    </div>
+
+</main>
+
+
+
+<!-- =================================
+     FOOTER
+================================= -->
+
+<footer class="footer small-footer">
+
+    <p>
+
+        Owner:
+        <strong>
+            Lekhraj Dhakad
+        </strong>
+
+    </p>
+
+
+    <p>
+
+        © 2026 PGDCA WALA GURU
+
+    </p>
+
+</footer>
+
+
+
+<!-- JavaScript -->
+
+<script src="js/script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,525 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>PGDCA WALA GURU - Home</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header class="header">
+
+    <div class="logo">
+
+        <i class="fa-solid fa-graduation-cap"></i>
+
+        PGDCA WALA GURU
+
+    </div>
+
+
+    <div class="user-area">
+
+        <span>
+
+            <i class="fa-solid fa-user"></i>
+
+            Welcome,
+            <span id="userName"></span>
+
+        </span>
+
+
+        <button
+            onclick="logoutUser()"
+            class="logout-btn">
+
+            Logout
+
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================
+     HERO SECTION
+========================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            Welcome to PGDCA WALA GURU 🎓
+        </h1>
+
+
+        <p>
+            Learn • Practice • Test Yourself
+        </p>
+
+
+        <p class="welcome-user">
+
+            Hello,
+            <strong id="heroUserName"></strong> 👋
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     SUBJECT SECTION
+========================= -->
+
+<main class="subjects-section">
+
+
+    <h2>
+
+        <i class="fa-solid fa-book-open"></i>
+
+        Select Your Subject
+
+    </h2>
+
+
+    <p class="section-subtitle">
+
+        Choose a subject and start your MCQ quiz
+
+    </p>
+
+
+
+    <!-- SUBJECT GRID -->
+
+    <div class="subject-grid">
+
+
+        <!-- 1. NETWORKING -->
+
+        <div class="subject-card networking">
+
+            <div class="subject-icon">
+
+                <i class="fa-solid fa-network-wired"></i>
+
+            </div>
+
+
+            <h3>
+                Networking
+            </h3>
+
+
+            <p>
+                Computer Networks & Communication
+            </p>
+
+
+            <button
+                onclick="startQuiz('networking')">
+
+                Start Quiz
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </div>
+
+
+
+        <!-- 2. DBMS -->
+
+        <div class="subject-card dbms">
+
+            <div class="subject-icon">
+
+                <i class="fa-solid fa-database"></i>
+
+            </div>
+
+
+            <h3>
+                DBMS
+            </h3>
+
+
+            <p>
+                Database Management System
+            </p>
+
+
+            <button
+                onclick="startQuiz('dbms')">
+
+                Start Quiz
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </div>
+
+
+
+        <!-- 3. SAD -->
+
+        <div class="subject-card sad">
+
+            <div class="subject-icon">
+
+                <i class="fa-solid fa-diagram-project"></i>
+
+            </div>
+
+
+            <h3>
+                SAD
+            </h3>
+
+
+            <p>
+                System Analysis & Design
+            </p>
+
+
+            <button
+                onclick="startQuiz('sad')">
+
+                Start Quiz
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </div>
+
+
+
+        <!-- 4. FUNDAMENTAL -->
+
+        <div class="subject-card fundamental">
+
+            <div class="subject-icon">
+
+                <i class="fa-solid fa-computer"></i>
+
+            </div>
+
+
+            <h3>
+                Fundamental
+            </h3>
+
+
+            <p>
+                Computer Fundamentals
+            </p>
+
+
+            <button
+                onclick="startQuiz('fundamental')">
+
+                Start Quiz
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </div>
+
+
+
+        <!-- 5. SECURITY -->
+
+        <div class="subject-card security">
+
+            <div class="subject-icon">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+            </div>
+
+
+            <h3>
+                Security
+            </h3>
+
+
+            <p>
+                Cyber & Computer Security
+            </p>
+
+
+            <button
+                onclick="startQuiz('security')">
+
+                Start Quiz
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </div>
+
+
+
+        <!-- 6. MS OFFICE -->
+
+        <div class="subject-card office">
+
+            <div class="subject-icon">
+
+                <i class="fa-solid fa-file-word"></i>
+
+            </div>
+
+
+            <h3>
+                MS Office
+            </h3>
+
+
+            <p>
+                Word, Excel & PowerPoint
+            </p>
+
+
+            <button
+                onclick="startQuiz('office')">
+
+                Start Quiz
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </div>
+
+
+
+        <!-- 7. HISTORY -->
+
+        <div class="subject-card history">
+
+            <div class="subject-icon">
+
+                <i class="fa-solid fa-landmark"></i>
+
+            </div>
+
+
+            <h3>
+                History of Rajasthan
+            </h3>
+
+
+            <p>
+                Rajasthan History & Heritage
+            </p>
+
+
+            <button
+                onclick="startQuiz('history')">
+
+                Start Quiz
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </div>
+
+
+
+        <!-- 8. GEOGRAPHY -->
+
+        <div class="subject-card geography">
+
+            <div class="subject-icon">
+
+                <i class="fa-solid fa-earth-asia"></i>
+
+            </div>
+
+
+            <h3>
+                Geography
+            </h3>
+
+
+            <p>
+                India & Rajasthan Geography
+            </p>
+
+
+            <button
+                onclick="startQuiz('geography')">
+
+                Start Quiz
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </div>
+
+
+
+        <!-- 9. ART & CULTURE -->
+
+        <div class="subject-card culture">
+
+            <div class="subject-icon">
+
+                <i class="fa-solid fa-palette"></i>
+
+            </div>
+
+
+            <h3>
+                Art & Culture
+            </h3>
+
+
+            <p>
+                Rajasthan Art & Culture
+            </p>
+
+
+            <button
+                onclick="startQuiz('culture')">
+
+                Start Quiz
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </div>
+
+
+    </div>
+
+</main>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="footer">
+
+    <h3>
+        PGDCA WALA GURU
+    </h3>
+
+
+    <p>
+        Learn • Practice • Improve • Succeed
+    </p>
+
+
+    <div class="owner">
+
+        <i class="fa-solid fa-user-tie"></i>
+
+        Owner:
+
+        <strong>
+            Lekhraj Dhakad
+        </strong>
+
+    </div>
+
+
+
+    <!-- SOCIAL LINKS -->
+
+    <div class="social-links">
+
+
+        <!-- INSTAGRAM -->
+
+        <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            class="instagram">
+
+            <i class="fa-brands fa-instagram"></i>
+
+            Instagram
+
+        </a>
+
+
+
+        <!-- WHATSAPP -->
+
+        <a
+            href="https://wa.me/919999999999"
+            target="_blank"
+            class="whatsapp">
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+            WhatsApp
+
+        </a>
+
+
+    </div>
+
+
+    <p class="copyright">
+
+        © 2026 PGDCA WALA GURU.
+        All Rights Reserved.
+
+    </p>
+
+</footer>
+
+
+
+<!-- JavaScript -->
+
+<script src="js/script.js"></script>
+
+
+</body>
+
+</html>
+```
